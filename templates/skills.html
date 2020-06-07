@@ -1,0 +1,123 @@
+{% load static %}
+<div class="container-fluid" style="width:100%;background-color: #9b59b6"><br>
+  <h1 style="color:#0984e3;font-family: 'Ubuntu', sans-serif;text-align: center;"> SKILLS</h1>
+  <div style="min-height:300px; margin:10px;">
+    <div class="container">
+      <div style="text-align:center;"class="row">
+        <div class="col-sm-12 col-md-12 col-lg-3">
+          <button class="btn btn-primary skills " onclick="filterSelection('all')"> Show all</button>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-3">
+          <button class="btn btn-primary skills" onclick="filterSelection('web_dev')"> Web Development </button>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-3">
+          <button class="btn btn-primary skills" onclick="filterSelection('languages')"> languages</button>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-3">
+          <button class="btn btn-primary skills" onclick="filterSelection('database')"> Database</button>
+        </div>
+      </div>
+  </div>
+<!-- Portfolio Gallery Grid -->
+  <div class="container">
+    <div class="row">
+      <center>
+
+        <div class="column col-sm-6 col-md-3 col-lg-3 web_dev">
+        <div class="content " >
+          <img src="{% static 'html.jpg'%}" class="skillimage"><br>
+        </div>
+      </div>
+
+      <div class="column col-sm-6 col-md-3 col-lg-3 web_dev">
+        <div class="content " >
+          <img src="{% static 'css.jpg'%}" class="skillimage"><br>
+        </div>
+      </div>
+
+      <div class="column col-sm-6 col-md-3 col-lg-3 web_dev">
+        <div class="content " >
+          <img src="{% static 'javascript.jpg'%}" class="skillimage"><br>
+        </div>
+      </div>
+
+      <div class="column col-sm-6 col-md-3 col-lg-3 web_dev">
+        <div class="content " >
+          <img src="{% static 'djangoa.png'%}"  class="skillimage"><br>
+        </div>
+      </div>
+
+      <div class="column col-sm-6 col-md-3 col-lg-3 languages">
+        <div class="content " >
+          <img style="border-radius:50%"src="{% static 'ca.jpg'%}" class="skillimage"><br>
+        </div>
+      </div>
+
+      <div class="column col-sm-6 col-md-3 col-lg-3 languages">
+        <div class="content " >
+          <img style="border-radius:50%" src="{% static 'cpp.jpg'%}" class="skillimage"><br>
+        </div>
+      </div>
+
+      <div class="column col-sm-6 col-md-3 col-lg-3 languages">
+        <div class="content " >
+          <img src="{% static 'pythona.jpg'%}"  class="skillimage" ><br>
+        </div>
+      </div>
+
+      <div class="column col-sm-6 col-md-3 col-lg-3 database">
+        <div class="content ">
+          <img src="{% static 'mysql.jpg'%}" width="500px" class="skillimage"><br>
+        <h4></h4>
+      </div>
+  </div>
+</center>
+<!-- END GRID -->
+</div>
+ </div></div></div>
+<!-- END MAIN -->
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("Container");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>

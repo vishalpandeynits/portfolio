@@ -1,0 +1,269 @@
+/* All Pages */
+*{
+    box-sizing: border-box;
+}
+
+body {
+  margin:0;
+  padding:0;
+  background-color:#dfe6e9;
+}
+html{
+  scroll-behavior: smooth;
+}
+.loader,
+.loader:before,
+.loader:after {
+  background: black;
+  justify-content: center;
+  color:black;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.loader {
+  color: black;
+  text-indent: -9999em;
+  margin: 88px auto;
+  position: relative;
+  top:350px;
+  font-size: 11px;
+  justify-content: center;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  justify-content: center;
+  content: '';
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  justify-content: center;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+
+/* Applied to all Pages*/
+
+/* Navigation Bar */
+nav{
+  font-size:2em;
+}
+.navfont{
+  font-family: 'Ubuntu', sans-serif;
+}
+/* Navigation Bar */
+
+/* Home Page Opened*/
+#intro {
+  display: flex;
+  height: 90%;
+    margin:0;
+  padding:0;
+  flex-direction: column;
+  justify-content: center;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#homebutton{
+  width:200px;
+  position:relative;
+  top:50px;
+}
+.homepage{
+    color:white;
+    font-family: 'Ubuntu', sans-serif;
+}
+#intro2 {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: zoomInUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+/* Home Page Closed*/
+
+/* About Me */
+#aboutme{
+  height:120%;
+}
+#pythonista{
+  color:white;
+  font-family: 'Ubuntu', sans-serif;
+  margin-left: 60px;
+}
+#notes{
+  font-size:1.3em;
+  font-family: 'Abel', sans-serif;
+}
+/* About Me Close */
+
+/* Contact Me*/
+.social-button {
+    width: 65px;
+    height: 65px;
+    padding: 10px;
+    color: white;
+    border-radius: 40px;
+    margin-left: 10px;
+}
+.social-button:hover{
+  color: black;
+}
+input{
+    border:1px solid black;
+    border-radius:0px;
+}
+input[type=text],
+input[type=email],
+input[type=number] {
+    padding: 10px;
+    background-color: beige;
+    opacity: 0.8;
+}
+#send_message{
+  color:white;
+  width:70%;
+  border: 1.5px solid white;
+  background-color:black;
+  border-radius:0px;
+  min-width:200px;
+}
+@keyframes example {
+  from {color:white;
+         width:70%;
+         border: 1.5px solid white;
+         background-color:black;
+        border-radius:0px;
+    }
+  to {
+     background-color: white;
+     color:black;
+     width:100%;
+    font-size: 120%;
+  }
+}
+#send_message:hover{
+  background-color: white;
+  color:black;
+  width:100%;
+  border:2px solid green;
+  font-size: 120%;
+  animation-name: example;
+  animation-duration: 0.2s;
+}
+/*Contact Me Close */
+
+/* Projects */
+#projects{
+  color:#0984e3;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+.visit{
+  float:left;
+  background-color:black;
+  color:white;
+  border-radius:2px;
+  left:10px;
+  cursor: not-allowed;
+  position:relative;
+  top:-30px;
+  height:30px;
+  padding:4px;
+}
+.gallery {
+  margin: 15px;
+  border: 1px solid white;
+  width:100%;
+  box-shadow: 2px 2px 2px rgb(12, 40, 100);
+}
+.gallery:hover {
+  border: 2px solid white;
+  opacity:0.85;
+  box-shadow: 5px 10px 18px rgb(34, 91, 94);
+}
+.desc {
+  text-align: center;
+  color:white;
+}
+.lasttwo{
+  position:relative;
+  top:40px;
+  height:400px;
+}
+.status{
+  float:right;
+  position:relative;
+  top:-28px;
+}
+/* Projects Close */
+
+/* skills */
+.skills{
+  width:220px;
+  height:50px;
+  margin:10px;
+  border-radius: 0px;
+  color:white;
+  background-color: black;
+}
+.skills:hover{
+  color:black;
+  background-color: white;
+}
+.column {
+  float: left;
+  width: 50%;
+  display: none; /* Hide all elements by default */
+}
+.content {
+  width:100%;
+  margin:20px;
+}
+.show {
+  display: block;
+}
+.skillimage{
+ width:75%;
+ height:110px;
+}
+
+/* Skills Close */

@@ -1,0 +1,278 @@
+{% load static %}
+<html >
+ <head>
+     <title> Vishal Pandey </title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href='{%static "style.css" %}'>
+  </head>
+  <body>
+    <div class="loader">
+      <div><center style="color:black; font-size:3em;"> Please Wait....
+      </center></div>
+    </div>
+<!-- Navigation Bar -->
+<nav style="background-color: #25CCF7;"class="container-fluid navbar navbar-expand-lg sticky-top navbar-light">
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse navfont" id="navbarSupportedContent">
+    <ul style="margin-right:40px;"class="navbar-nav ml-auto">
+       <li class="nav-item ">
+          <a class="nav-link" href="#aboutme">About Me</a>
+       </li>
+       <li class="nav-item">
+          <a class="nav-link" href="#project">Projects</a>
+       </li>
+       <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+       </li>
+       <li class="nav-item">
+          <a class="nav-link" href="#contacts">Contacts</a>
+       </li>
+    </ul>
+ </div>
+</nav>
+<!-- NAVIGATION BAR -->
+
+
+<!-- HOME PAGE-->
+<center>
+<div id="intro" class="container-fluid">
+  <img src="{% static 'k.gif' %}" style="width:100%;height:100%;">
+  <div class="centered">
+    <div class="row">
+
+       <div class="col-sm-12 col-md-12 col-lg-12 homepage">
+          <h2 style="font-size:1.3em;">Hello There !!!</h2>
+          <h1 style="font-size:2.5em;"class="animate__animated animate__backInLeft">
+             I AM  <nobr>VISHAL</nobr> <nobr> PANDEY </nobr>
+           </h1>
+        </div>
+
+        <div id="intro2" style="font-size:1.5em;" class=" col-sm-12 col-md-12 homepage animate__animated animate__zoomInUp">
+              A full stack web developer currently pursuing B-Tech from National Institute of Technology, Silchar
+        </div>
+    </div><br><br>
+    <center><a href="#project" style="width:250px;"id="#homebutton"class="btn btn-lg btn-primary">Visit Projects </a></center>
+  </div>
+</div>
+</center>
+<!-- HOME PAGE-->
+
+
+<!-- About Me -->
+<br id="aboutme"><br><br>
+<div class="container-fluid p-4" style="background-color:#01CBC6; min-height:70%;">
+  <h1 id="pythonista"> I AM A <nobr>PYTHONISTA </nobr></h1>
+  <div class="row ">
+    <img class="container col-md-6 col-lg-4 col-sm-7 img-fluid" src="{% static 'photo.png' %}" style="border:2px solid white;">
+       <div class="col-lg-6 col-sm-12 col-md-12">
+          <div class="row">
+            <p id="notes" class="ml-4">
+              <span style="font-size:130%;font:" >Citius Altius Fortius </span> That drives me, I am a highly energetic and enthusiastic Computer Science freshman from NIT Silchar.
+                    Computers have been a fascination for me since my earliest days of childhood, and this fascination has resulted in me exploring its various realms.
+                    I am proficient in Data Structures and Algorithms, and both frontend and backend web development. I have worked extensively with Python and
+                    its web application frameworks, like Django.<br>
+              <span style="font-size:1.2em;font-weight:bold;">Skills:</span><br>
+              <u>Web Development</u>: HTML | CSS | Javascript | Django | Vue.js<br>
+              <u>Languages</u>:  C | C++ | Python | Javascript <br>
+              <u>Database</u>: MySql <br>
+              <u>Others</u>: Web Scrapping| <nobr>MS-excel</nobr> |<nobr> MS-Powerpoint </nobr>| GIT | CMD | Powershell <br>
+             </p>
+          </div>
+        </div>
+   </div >
+</div>
+<!-- About Me -->
+
+<!-- Projects -->
+<br id="project"><br><br>
+<div class="container"> <br>
+<center>
+   <h1 id="projects"> PROJECTS</h1>
+   <div class="row">
+
+
+		<div class="col-sm-12 col-md-6 col-lg-6">
+	      <div class="gallery"style="height:350px;">
+	        <!-- <a target="_blank" href="tu.jpg"> -->
+	        <img class="img-fluid" src="{% static 'photo.png' %}" style="width:100%;height:75%;" >
+           <!-- </a> -->
+	        <div class="desc">
+	           <h5 style="color:black;">This project is all about me.</h5>
+	        </div><br>
+	         <div style="float:right;">
+	            <strong> Current Status: </strong> <span style="color:green"> Finished.</span>
+	         </div>
+	      </div>
+	    </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-6">
+           <div class="gallery" style="height:350px;">
+              <!-- <a target="_blank" href="tu.jpg"> -->
+              <img class="img-fluid" src="{% static 'note.jpg' %}" style="width:100%;height:75%;">
+            <!-- </a> -->
+              <div class="desc">
+                 <h5 style="color:black;">This Website is built in django to share notes among students.</h5>
+              </div>
+              <a style="position:relative;top:0px;color:white;"class="visit" > Visit Site </a>
+              <div style="float:right;"> <strong> Current Status: </strong> <span style="color:orange"> Currently Working</span></div>
+           </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-6 lasttwo">
+           <div class="gallery">
+              <!-- <a target="_blank" href="tu.jpg"> -->
+                 <center> <img class="img-fluid" src="{% static 'email.jpg' %}"  style="width:100%;height:75%;"></center>
+              <!-- </a> -->
+              <div class="desc">
+                 <h5 style="color:black;">This Website is built in django to send E-mails more easily.</h5>
+              </div><br><br>
+                <a style="color:white;" class="  visit" > Visit Site </a>
+              <div class="status">
+              	<strong > Current Status: </strong>
+              	<span style="color:orange"> Yet to deploy.</span>
+              </div>
+           </div>
+        </div>
+
+		<div class="col-sm-12 col-md-6 col-lg-6 lasttwo">
+		   <div class="gallery" >
+		      <!-- <a target="_blank" href="tu.jpg"> -->
+		      <img class="img-fluid" src="{% static 'corona.jpg' %}"  style="width:100%;height:75%;" >
+        <!-- </a> -->
+		      <div class="desc">
+		         <h5 style="color:black;">Covid-19 Tracker for India.</h5>
+		      </div>
+		      <br><br>
+          <a style="color:white;"class=" visit" > Visit Site </a>
+		      <div class="status">
+		       	<strong> Current Status: </strong>
+		       	<span style="color:orange"> Started Working </span>
+		   	  </div>
+		   </div>
+		</div>
+
+  </div>
+  </center>
+</div>
+ <!-- Projects -->
+
+<!-- Skills -->
+<br id="skills"><br><br>
+{% include 'skills.html' %}
+<br id="contacts" >
+</div>
+<!--  Skills-->
+
+<!-- contact me -->
+<div  style="width:100%;background-color: #2980b9" class="container-fluid p-4 mt-4">
+ <div  class="container-fluid p-4 mt-4">
+    <div class="container ">
+       <br>
+       <center>
+          <table class="container">
+             <div class="row">
+                <div class="col-sm-12 ml-auto">
+                   <a href="https://www.facebook.com/bishal.panday.9275" type="button" class="btn-floating  btn-fb">
+                   <i style="background: #3B5998;padding-left:17px;" class="social-button  fa fa-facebook-f fa-3x"></i>
+                   </a>
+                   <a href="https://twitter.com/@VishalP07329849" type="button" class="btn-floating  btn-tw">
+                   <i style="background: #55ACEE;padding-left:13px; " class="social-button  fa fa-twitter fa-3x"></i>
+                   </a>
+                   <a href="https://www.instagram.com/i_am_vishal_pandey_" type="button" class="btn-floating  btn-instagram">
+                   <i style="background: #d6249f;padding-left:13px;"class="social-button fa fa-instagram fa-3x "></i>
+                   </a>
+                   <a href="https://github.com/vishalpandeyvip" type="button" class="btn-floating  btn-github">
+                   <i style="background-color:#4078c0;padding-left:13px;"class="social-button fa fa-github fa-3x "></i>
+                   </a>
+                   <a href="https://www.instagram.com/i_am_vishal_pandey_" type="button" class="btn-floating  btn-linkedin">
+                   <i style="background: #0e76a8;padding-left:13px;"class="social-button fa fa-linkedin fa-3x "></i>
+                   </a>
+                </div>
+             </div>
+          </table>
+       </center>
+       <br>
+       {% if message %}
+       <p class="alert alert-primary" >{{ message }} </p>
+       {% endif %}
+       <form id="form" method="POST">
+          {% csrf_token %}
+          <div id="div_id_your_name" class="control-group">
+             <div class="controls">
+                <input type="text" name="your_name" class="form-control container" placeholder="Your Name"  maxlength="50" class="textinput textInput" required id="id_your_name">
+             </div>
+          </div>
+          <br>
+          <div id="div_id_your_email" class="control-group">
+             <div class="controls">
+                <input type="email" name="your_email"  class="form-control container" placeholder="Your E-mail"  maxlength="254" class="emailinput" required id="id_your_email">
+             </div>
+          </div>
+          <br>
+          <div id="div_id_phone_number" class="control-group">
+             <div class="controls">
+                <input type="number" name="phone_number"class="form-control numberinput" max='9999999999' placeholder="Your Phone Number"required id="id_phone_number">
+             </div>
+          </div>
+          <br>
+          <div id="div_id_message" class="control-group">
+             <div class="controls">
+                <textarea name="message"  rows="10" class="textarea form-control" required id="id_message"> </textarea>
+             </div>
+          </div>
+          <br>
+          <center>
+             <button id="send_message"type="submit" class="btn btn-lg btn-block submit inputbtn">Send Message</button>
+          </center>
+    </div>
+    <br>
+    <center>
+    <div style="margin-left:auto;color:white;">
+    <ul style="list-style-type:none;">
+    	<li>
+    		<i class="fa fa-2x fa-home mr-2 "></i>
+    		<span style="font-size:20px;" >Tinsukia, Assam</span>
+    		<br><br>
+    	</li>
+    	<li>
+    		<i class="fa fa-2x fa-envelope mr-2"></i>
+    		<span style=" font-size:20px;" >vishalpandeynits@gmail.com </span>
+    		<br><br>
+    	</li>
+    	<li>
+    		<i class="fa fa-2x fa-phone mr-2"></i>
+    		<span style="font-size:20px;" > +919957767675 </span>
+    		<br><br>
+    	</li>
+     </ul>
+    </div>
+   </center>
+  </form>
+ </div>
+</div>
+<!-- Contact me close  -->
+      </script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <script>
+        document.onreadystatechange = function() {
+  if (document.readyState !== "complete") {
+    document.querySelector("body").style.visibility = "hidden";
+    document.querySelector(".loader").style.visibility = "visible";
+  } else {
+    setTimeout(function() {
+      document.querySelector(".loader").style.display = "none";
+      document.querySelector("body").style.visibility = "visible";
+    }, 2000);
+  }
+};
+</script>
+</html>
