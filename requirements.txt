@@ -4,7 +4,7 @@ Jinja2==2.11.3
 mysql-connector==2.2.9
 mysql-connector-python-rf==2.2.2
 Pillow==8.2.0
-pipenv==2018.11.26
+pipenv==2022.1.8
 virtualenv==20.0.13
 virtualenv-clone==0.5.4
 virtualenvwrapper-win==1.2.6
